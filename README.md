@@ -1,5 +1,7 @@
 South American Deforestation 
 
+![NPLCC](images/nplcc-logo2-with-map.webp)
+
 # South_American_Deforestation-
 Final Project for UC Davis Boot Camp 2021
 
@@ -27,7 +29,7 @@ After assembling the dataset, we will be using pandas and pycaret to create clus
 
 We will create a dashboard page with a dropdown menu that will allow for a user to select which Country they want to investigate. We will also use Tableau to make map visulizations. 
 
-
+![NPLCC](images/Rain_forest.jpg)
 
 
 
