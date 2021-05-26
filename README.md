@@ -1,6 +1,6 @@
 South American Deforestation 
 
-![NPLCC](images/nplcc-logo2-with-map.png)
+![NPLCC](images/I_have_the_power.png)
 
 # South_American_Deforestation-
 Final Project for UC Davis Boot Camp 2021
