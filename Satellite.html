@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Satellite</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Bring in our nav bar -->
+   <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div><a class="navbar-brand" href="index.html">Home</a></div>
+  
+      <ul class="nav justify-content-end">
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" 
+          id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">
+           Machine Learning Models
+          </a>
+         
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="LinearRegressionML.html">Linear Regression Model</a></li>
+            <li><a class="dropdown-item" href="ComparisonModelML.html">Comparison Model</a></li>
+            <li><a class="dropdown-item" href="Lat_LonML.html">Lat Lon Model</a></li>
+            <li><a class="dropdown-item" href="FuturePredictML.html">Future Prediction Model</a></li>
+          </ul>
+        
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" 
+          id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">
+           Visualization Analysis 
+          </a>
+         
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="LinearRegressionTableau.html">Linear Model</a></li>
+            <li><a class="dropdown-item" href="Tableau.html">Tableau</a></li>
+            <li><a class="dropdown-item" href="Satellite.html">Satellite Hack</a></li>
+            <li><a class="dropdown-item" href="why_care.html">Why Care?</a></li>
+        </ul>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" 
+          id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">
+           Data and Conclusion
+          </a>
+         
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="Brazil_Table.html">Brazil</a></li>
+                <li><a class="dropdown-item" href="Deforestation_Table.html">Deforestation</a></li>
+                <li><a class="dropdown-item" href="Forest_Table.html">Forest</a></li>
+                <li><a class="dropdown-item" href="Conclusion.html">Conclusion</a></li>
+            </ul>
+
+        </li>
+ 
+      </ul>
+    </div>
+   </nav>
+ 
+</head>
+<body> 
+
+<div class="container">
+  <div class="row">
+      <div class = 'img-with-text'>
+        <img src="/images/sat1.jpg" alt="..." class="img-thumbnail"  id="description-image">
+            <p> 
+              <a href="https://www.kaggle.com/josegcardenas/notebookcf0547b0f6/ ">Jose's Kaggle</a>
+              <br></br>
+                Our model uses different visual libraries and tools to read and evaluate satellite images that we process. At its foundation we used Pytorch to be able to create a visual processing model that could be altered while being built. We implemented CUDA, a toolkit of torch, to allow for us to run the model using GPUs rather than the typical CPUs.
+                
+
+                <br></br>
+                What does our model do?
+                1.    Takes in satellite images that we input. Reads the images and segments the image which means it determines what is what within the picture. It uses color within each pixel of the image to determine what it is most likely going to be. For instance, water versus dirt or forest vs urban land.
+                
+                <br></br>
+      
+            </p>
+      </div>
+  </div>
+  <div class ="row">
+      <div class = "img-with-text">
+        <img src="images/sat2.png" alt="..." class="img-thumbnail"  id="description-image">
+
+            <p> 
+                <br></br>
+                Purpose of the model?
+                2.    Is to check the accuracy of our predictions by implementing a more accurate reading of the data. It provides the ability to add new findings and close the gap of our predictions. Our predictions are based on data that is provided but is limited because they are older by months or more. Our model can take satellite images of the previous day and implement the information into our predictions. This creates a better method of dealing with deviations from our predictions such as mass wildfires or logging.
+                <br></br>
+      
+            </p>
+      </div>
+  </div>
+
+  <div class ="row">
+    <div class = "img-with-text">
+      <img src="images/satpic.png" alt="..." class="img-thumbnail"  id="description-image">
+
+          <p> 
+              <br></br>
+              Power of the model!
+              3. One feature of the model that increases accuracy is the use of image masks with our processing. An image mask does not alter the original image but instead gives us the power to focus on certain aspects or disregard others. The use of this new images can give us additional data to input into our model and continue to develop and check the accuracy of our predictions. This means that outliers in our data can be incorporated or accounted for in the case of a sudden change in our forest data! In further development we could enhance the model my adding a user interface. Image detection and segmentation has many growing uses nowadays and this model has many ways it can grow!
+              <br></br>
+    
+          </p>
+    </div>
+</div> 
+
+</div>
+
+
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
